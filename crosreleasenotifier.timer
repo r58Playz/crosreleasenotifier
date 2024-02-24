@@ -1,0 +1,9 @@
+[Unit]
+Description=Check for ChromeOS updates every hour
+
+[Timer]
+OnBootSec=3min
+OnUnitActiveSec=1h
+
+[Install]
+WantedBy=timers.target
