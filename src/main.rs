@@ -143,6 +143,7 @@ async fn get_releases(opts: &Cli) -> Result<Vec<Release>, Box<dyn std::error::Er
                     {
                         filtered.push(line);
                     } else if line.contains("This update contains selective Security fixes")
+                        || line.contains("This update contains selected Security fixes")
                         || line.contains("This update contains multiple Security fixes")
                         || line.contains("ChromeOS Vulnerability Bug Fixes")
                         || line.contains("Security Fixes And Rewards")
